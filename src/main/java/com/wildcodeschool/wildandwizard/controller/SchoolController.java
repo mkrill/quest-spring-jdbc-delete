@@ -12,7 +12,7 @@ public class SchoolController {
     private SchoolRepository repository = new SchoolRepository();
 
     @GetMapping("/school/delete")
-    public String deleteWizard(@RequestParam Long id) {
+    public String deleteSchool(@RequestParam Long id) {
 
         repository.deleteById(id);
 
